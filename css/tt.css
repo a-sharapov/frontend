@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* TouchTouch micro gallery */
+#galleryOverlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 100000;
+	background-color: #222;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	display: none;
+	transition: opacity .45s ease
+}
+#galleryOverlay.visible {
+	opacity: 1
+}
+#gallerySlider {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	white-space: nowrap;
+	position: absolute;
+	transition: left .4s ease
+}
+#gallerySlider .placeholder {
+	background: url("../images/preloader.gif") no-repeat center center;
+	height: 100%;
+	line-height: 1px;
+	text-align: center;
+	width: 100%;
+	display: inline-block
+}
+#gallerySlider .placeholder:before {
+	content: "";
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	margin-right: -1px
+}
+#gallerySlider .placeholder img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle
+}
+#gallerySlider.rightSpring {
+	-moz-animation: rightSpring .3s;
+	-webkit-animation: rightSpring .3s
+}
+#gallerySlider.leftSpring {
+	-moz-animation: leftSpring .3s;
+	-webkit-animation: leftSpring .3s
+}
+#prevArrow, #nextArrow {
+	border: 0;
+	text-decoration: none;
+	background: url('../images/arrows.png') no-repeat;
+	opacity: .5;
+	cursor: pointer;
+	position: absolute;
+	width: 43px;
+	height: 58px;
+	top: 50%;
+	margin-top: -29px;
+	transition: opacity .2s ease
+}
+#prevArrow:hover, #nextArrow:hover {
+	opacity: 1
+}
+#prevArrow {
+	background-position: left top;
+	left: 40px
+}
+#nextArrow {
+	background-position: right top;
+	right: 40px
+}

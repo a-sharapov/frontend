@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* Адаптивный дизайн
+    для IE < 8: 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    для iPhone: 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+*/
+
+@media screen and (max-width: 1000px) {
+
+}
