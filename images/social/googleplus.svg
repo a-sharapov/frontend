@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+	<g id="googleplus">
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18.822,13.917h-8.396v2.808h4.786
+				c-0.706,1.94-2.562,3.328-4.745,3.328c-2.792,0-5.055-2.263-5.055-5.055c0-2.791,2.263-5.054,5.055-5.054
+				c1.237,0,2.368,0.446,3.246,1.186l2.381-2.39c-1.49-1.344-3.462-2.164-5.628-2.164c-4.652,0-8.424,3.771-8.424,8.424
+				s3.771,8.424,8.424,8.424s8.424-3.771,8.424-8.424c0-0.356-0.029-0.705-0.071-1.05L18.822,13.917z M25.641,13.987v-2.316h-2.177
+				v2.316h-2.316v2.176h2.316v2.316h2.177v-2.316h2.316v-2.176H25.641z"/>
+	</g>
+</svg>

@@ -1,0 +1,30 @@
+/*
+HTML: 
+<div class="circle">65.4%</div>
+<script type="text/javascript">
+var Circle = function(sel){
+    var circles = document.querySelectorAll(sel);
+    [].forEach.call(circles,function(el){
+        var valEl = parseFloat(el.innerHTML);
+        valEl = valEl*408/100;
+        el.innerHTML = '<svg width="160" height="160"><circle transform="rotate(-90)" r="65" cx="-80" cy="80" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 408px;" r="65" cx="-80" cy="80" /></svg>';
+        
+    });
+};
+Circle('.circle');
+</script>
+*/
+.circle {
+  display: inline-block;
+}
+circle {
+  fill: rgba(0,0,0,0);
+  stroke: #eee;
+  stroke-width: 15;
+  stroke-dasharray: 408px 408px;
+}
+circle:nth-child(2n) {
+  fill: rgba(0,0,0,0);
+  stroke: #000;
+  stroke-width: 15;
+}

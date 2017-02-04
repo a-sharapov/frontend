@@ -1,0 +1,179 @@
+@charset"utf-8";
+label {
+	float: left;
+	width: 100%;
+	padding: 0 0 10px;
+	margin: 0;
+}
+input, textarea, select, button, 
+.selector, .checker, .radio, .uploader, .button {
+	display: inline-block;
+	padding: 0 10px !important;
+	vertical-align: top;
+	color: #555;
+	background: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #c1c1c1;
+	text-shadow: 0 1px 0 #fff;
+	outline: none;
+	box-shadow: 0 1px 0 #fff;
+	transition: all 400ms ease;
+}
+.checker, .radio, .uploader, .button {
+	border: 1px solid #c1c1c1;
+}
+input, textarea, select, button {
+	line-height: 40px;
+	min-height: 40px;
+}
+textarea {
+	line-height: 40px !important;
+}
+input:hover, textarea:hover, .selector:hover, .checker:hover, .radio:hover, .uploader:hover {
+	border-color: #a10000;
+}
+input:active, textarea:active, .selector:active, .checker:active, .radio:active, input:focus, textarea:focus, .selector:focus, .checker:focus, .radio:focus {
+	border-color: #000;
+}
+textarea {
+	overflow: hidden;
+	height: 160px;
+	max-height: 160px;
+	padding: 11px 20px 0;
+	background: linear-gradient(to bottom, transparent, transparent 39px, #c1c1c1 0px);
+    background-size: 100% 40px;
+}
+textarea:hover {
+	background: linear-gradient(to bottom, transparent, transparent 39px, #a10000 0px);
+    background-size: 100% 40px;
+}
+textarea:focus, textarea:active {
+	background: linear-gradient(to bottom, transparent, transparent 39px, #000 0px);
+    background-size: 100% 40px;
+}
+button, input[type="button"], input[type="button"]:focus, .button {
+	font-weight: bold;
+	color: #333;
+	line-height: 46px;
+	height: 50px;
+	padding: 0 20px !important;
+	font-size: 16px;
+	border: 1px solid #c1c1c1;
+	background: linear-gradient(to bottom, #f9f9f9, #f3f3f3);
+	box-shadow: 0 2px 7px rgba(0,0,0,.15), inset 0 1px 0 #fff;
+}
+button:hover, input[type="button"]:hover, .button:hover {
+	background: linear-gradient(to top, #fff, #f5f5f5);
+	color: #000;
+	box-shadow: inset 0 4px 7px rgba(0, 0, 0, .1);
+}
+button:active, input[type="button"]:active, .button:active {
+	color: #111;
+	background: linear-gradient(to top, #fff, #f5f5f5);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+}
+a.button, 
+span.button {
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Uniform CSS layer */
+.selector {
+	position: relative;
+	box-sizing: border-box;
+	line-height: 48px;
+	border: 1px solid #c1c1c1;
+}
+.selector:after {
+	position: absolute;
+	content: '\25BC';
+	color: #333;
+	width: 10px;
+	height: 10px;
+	background: none;
+	top: 50%;
+	right: 10px;
+	margin: -5px 0 0 0;
+	line-height: 10px;
+    font-size: 10px;
+}
+.selector > select {
+	position: absolute;
+	font-size: 14px;
+	height: 48px;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	width: 100%;
+	opacity: 0;
+}
+.selector > span {
+	color: #777;
+}
+.checker, .radio {
+	width: 18px;
+	height: 18px;
+	margin: 0 5px -4px 0;
+	padding: 0 !important;
+	position: relative;
+}
+.radio {
+	border-radius: 10px;
+}
+.checker input, .radio input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	opacity: 0;
+	min-height: 0;
+}
+.checker span, .radio span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	top: 0;
+	left: 0;
+}
+.checker .checked {
+	background: url(/frontend/images/forms/checked.svg) no-repeat center center;
+	background-size: 12px;
+}
+.radio .checked {
+	background: url(/frontend/images/forms/round.svg) no-repeat center center;
+	background-size: 8px;
+}
+.uploader {
+	position: relative;
+	min-width: 200px;
+	border-color: #ccc;
+}
+.uploader > input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.uploader .action {
+	position: absolute;
+	background: linear-gradient(to bottom, #fefefe, #eee);
+	top: 0;
+	right: 0;
+	margin: -1px;
+	padding: 0;
+	width: 100px;
+	border: 1px solid #aaa;
+	text-align: center;
+	line-height: 33px;
+	height: 33px;
+	border-radius: 3px;
+}
+.uploader .filename {
+	font-size: 11px;
+	color: #aaa;
+}

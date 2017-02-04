@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* TouchTouch micro gallery */
+#galleryOverlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 100000;
+	background: #faf8f4;
+	background: rgba(248,247,243,.85) url(../../images/base/close-thin.svg) no-repeat 98% 3%;
+	overflow: hidden;
+	display: none;
+	transition: opacity .45s ease
+}
+#galleryOverlay.visible {
+	opacity: 1
+}
+#gallerySlider {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	white-space: nowrap;
+	position: absolute;
+	transition: left .4s ease
+}
+#gallerySlider .placeholder {
+	background: url("../../images/base/loading.svg") no-repeat center center;
+	height: 100%;
+	line-height: 1px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+#gallerySlider .placeholder:before {
+	content: "";
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	margin-right: -1px
+}
+#gallerySlider .placeholder img {
+	display: inline-block;
+	max-height: 80%;
+	cursor: pointer;
+	max-width: 80%;
+	vertical-align: middle;
+	box-shadow: 0 2px 35px rgba(0,0,0,.3);
+}
+#gallerySlider.rightSpring {
+	-moz-animation: rightSpring .3s;
+	-webkit-animation: rightSpring .3s
+}
+#gallerySlider.leftSpring {
+	-moz-animation: leftSpring .3s;
+	-webkit-animation: leftSpring .3s
+}
+#prevArrow, #nextArrow {
+	border: 0;
+	text-decoration: none;
+	background: url('../../images/base/arrows.svg') no-repeat;
+	opacity: .5;
+	cursor: pointer;
+	position: absolute;
+	width: 40px;
+	height: 60px;
+	top: 50%;
+	margin-top: -30px;
+	transition: opacity .2s ease
+}
+#prevArrow:hover, #nextArrow:hover {
+	opacity: 1
+}
+#prevArrow {
+	background-position: left top;
+	left: 40px
+}
+#nextArrow {
+	background-position: right top;
+	right: 40px
+}
+/* ZOOM */
+a.view-zoomed {
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	font-size: 16px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0;
+	margin: 0 -65px;
+	width: 130px;
+	border-radius: 0;
+	background-color: #eee;
+	background: rgba(150,150,150,.85);
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: none;
+	border: 1px solid #fff;
+}
+a.view-zoomed:before {
+	content: '';
+	color: #fff;
+	font-size: 13px;
+	text-indent: 1px;
+	font-weight: bold;
+	display: inline-block;
+	background: url(../../images/base/zoom.svg) no-repeat center top;
+	background-size: cover;
+	height: 20px;
+	line-height: 22px;
+	width: 20px;
+	margin: -2px 10px -4px 0;
+	padding: 0;
+}
+a.view-zoomed:hover {
+	color: #fff;
+	background-color: #777;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.4);
+}

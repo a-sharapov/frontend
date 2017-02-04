@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="arrows_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="60px" viewBox="0 0 80 60" enable-background="new 0 0 80 60" xml:space="preserve">
+<g id="arrows">
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DC202C" d="M32.256,7.14L2.725,29.953l29.531,22.813
+			c14.274,13.376-6.917-22.813-6.917-22.813S46.53-6.235,32.256,7.14z M47.65,7.14c-14.274-13.375,6.917,22.813,6.917,22.813
+			S33.376,66.143,47.65,52.767l29.531-22.813L47.65,7.14z"/>
+</g>
+</svg>

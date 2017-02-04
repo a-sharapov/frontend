@@ -1,0 +1,14 @@
+@charset "utf-8";
+article {
+    text-align: center;
+}
+h1 {
+    margin: 15% 0 0;
+    font-size: 200px;
+    line-height: 200px;
+    color: #a10000;
+}
+.second-line {
+    font-size: 30px;
+    margin: 0 0 30px;
+}

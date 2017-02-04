@@ -1,0 +1,120 @@
+@charset"utf-8";
+/* Fonts */
+*::selection {
+	color: #eee;
+	background-color: #666;
+	text-shadow: 0 1px 0 #000;
+}
+body {
+    line-height: 22px;
+}
+body * {
+	line-height: inherit;
+	font-family: inherit;
+}
+/* hr */
+hr {
+	margin: 5px 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+	border: none;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,.05);
+}
+/* Links */
+a {
+	color: #a10000;
+	text-decoration: underline;
+	transition: all .3s linear;
+}
+a:active, a:hover {
+	color: #ff1900;
+}
+/* Head & pharagraph */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	line-height: 32px;
+	margin: 0 0 10px;
+	font-weight: bold;
+	color: #000;
+}
+h1 {
+	font-size: 30px;
+    line-height: 30px;
+	margin: 0 0 30px;
+}
+h2 {
+	font-size: 24px;
+    line-height: 26px;
+	margin: 0 0 20px;
+}
+h3 {
+	font-size: 22px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 18px;
+}
+p:not([class]) {
+	margin: 0 0 15px;
+}
+* > p:last-child {
+	margin: 0;
+}
+blockquote {
+	
+}
+ol:not([class]), ul:not([class]) {
+	margin: 0 0 10px;
+}
+ol:not([class]) li, ul:not([class]) li {
+	margin: 0 0 7px;
+	list-style-position: inside;
+}
+article ul:not([class]) > li, aside ul:not([class]) > li,
+.tabs ul:not([class]) > li, .tabs ul:not([class]) > li {
+	list-style-type: square;
+	margin-bottom: 7px;
+}
+article ul:not([class]) ul,
+article ol:not([class]) ol {
+	margin: 10px 0 10px 50px;
+}
+article ul:not([class]) ul > li {
+	list-style: circle;
+}
+/* Content tables */
+article table,
+.tabs table {
+	float: left;
+	padding: 0;
+	margin: 0 0 20px;
+	background: rgba(255, 255, 255, .1);
+	color: #666;
+}
+article table td, article table th,
+.tabs table td, .tabs table th {
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+}
+article table th,
+.tabs table th {
+	background: #ddd;
+}
+article table tr:nth-child(odd),
+.tabs table tr:nth-child(odd) {
+	background: rgba(255, 255, 255, .6);
+}
+p.noresult,
+span.noresult {
+	color: inherit;
+}
+/* img styles */
+img.floater {
+	float: left;
+	margin: 0 20px 20px 0;
+}

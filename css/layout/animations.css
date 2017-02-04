@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* Анимационные правила:
+Описание анимаций:
+@keyframes ani-name {
+	0% {
+		stroke-width: 2;
+		transform: scale(1, 1);
+	}
+	50% {
+		stroke-width: 10;
+		transform: scale(.9, .9);
+	}
+}
+Вызов анимаций:
+.selector > svg #item {
+    animation: ani-name linear 1s infinite;
+}
+*/
