@@ -1,4 +1,4 @@
 frontend
 ========
 
-frontend css/js framework base for MODX
+a-sharapov frontend framework base for MODX Evo
